@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenmacth.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Titulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/calculos/CalculadorDeTempo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/calculos/CalcularNota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/calculos/Classificavel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/calculos/FiltroDeClassificacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/calculos/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Episodios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,26 +34,47 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ebd3e199-8d2e-4ede-add7-2b085118caa3" />
+        <option name="url" value="https://github.com/llucasBorba/testeJava.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2RshsPpZr4NqyPYP8ga4Dte2QAi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "/Users/lucasborba/Desktop/testejava/screenmacth/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/lucasborba/Desktop/testejava/screenmacth/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +84,11 @@
       <option name="presentableId" value="Default" />
       <updated>1688044902640</updated>
       <workItem from="1688044903918" duration="24679000" />
+      <workItem from="1688484657052" duration="2100000" />
+      <workItem from="1688666514722" duration="6244000" />
+      <workItem from="1689037596206" duration="2189000" />
+      <workItem from="1689295434143" duration="5734000" />
+      <workItem from="1689722066728" duration="6949000" />
     </task>
     <servers />
   </component>

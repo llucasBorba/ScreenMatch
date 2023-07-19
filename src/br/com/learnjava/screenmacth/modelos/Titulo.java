@@ -1,4 +1,4 @@
-package br.com.learnjava.screenmacth;
+package br.com.learnjava.screenmacth.modelos;
 
 public class Titulo {
 
@@ -17,8 +17,16 @@ public class Titulo {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
     public void setAnoDeLancamento(int anoDeLancamento) {
-        if (anoDeLancamento < 1895 ) {
+        if ( anoDeLancamento < 1895 ) {
             System.out.println("Nem existia filme mané");
         }else {
             this.anoDeLancamento = anoDeLancamento;
@@ -35,7 +43,8 @@ public class Titulo {
     //Metodos de uma classe
     public void exibeFichaTecnica(){
         System.out.println("\nNome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        System.out.println("Ano de lançamento: " + this.anoDeLancamento);
+        System.out.println("A duração em minutos é: " + duracaoEmMinutos);
     }
 
     public void avalieFilme(double nota){
