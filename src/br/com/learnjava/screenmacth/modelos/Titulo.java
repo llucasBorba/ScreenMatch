@@ -1,6 +1,6 @@
 package br.com.learnjava.screenmacth.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
     //Declarar atributos de uma classe
     String nome;
@@ -10,11 +10,16 @@ public class Titulo {
     private double somaAvaliacao;
     private int totalDeAvaliacao;
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        if ( anoDeLancamento < 1895 ) {
+            System.out.println("Nem existia filme mané");
+        }else {
+            this.anoDeLancamento = anoDeLancamento;
+        }
+    }
     public int getTotalDeAvaliacao(){
         return totalDeAvaliacao;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getNome() {
@@ -24,13 +29,6 @@ public class Titulo {
     public int getAnoDeLancamento() {
         return anoDeLancamento;
     }
-
-    public void setAnoDeLancamento(int anoDeLancamento) {
-        if ( anoDeLancamento < 1895 ) {
-            System.out.println("Nem existia filme mané");
-        }else {
-            this.anoDeLancamento = anoDeLancamento;
-        }}
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
@@ -56,4 +54,8 @@ public class Titulo {
         return somaAvaliacao / totalDeAvaliacao;
     }
 
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }

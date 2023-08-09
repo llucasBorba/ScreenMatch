@@ -17,13 +17,13 @@ public class Storage {
                 Digite o nome do filme:
                  """);
     String nome = scanner.nextLine();
-        Titulo .setNome(nome);
+      //  Titulo .setNome(nome);
 
 
         System.out.println("Digite  o ano de lançamento: ");
     int anoDeLancamento = scanner.nextInt();
         scanner.nextLine();
-        Titulo.setAnoDeLancamento(anoDeLancamento);
+      //  Titulo.setAnoDeLancamento(anoDeLancamento);
 
         System.out.println("\nDigite  a minutagem do filme: ");
     int duracaoEmMinutos = scanner.nextInt();

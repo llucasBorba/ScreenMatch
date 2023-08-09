@@ -1,3 +1,4 @@
+package br.com.learnjava.screenmacth.principal;
 
 import br.com.learnjava.screenmacth.calculos.FiltroDeClassificacao;
 import br.com.learnjava.screenmacth.modelos.Filme;
@@ -5,7 +6,6 @@ import br.com.learnjava.screenmacth.modelos.Serie;
 import br.com.learnjava.screenmacth.calculos.CalculadorDeTempo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -15,42 +15,34 @@ public class Main {
 
         // Instanciando uma classe
 
-        var tropa = new Filme();
+        var tropa = new Filme("Tropa de Elite", 2100);
 
-        tropa.setNome("Tropa de Elite");
-        tropa.setAnoDeLancamento(2100);
         tropa.setDuracaoEmMinutos(270);
         tropa.avalieFilme(10);
         tropa.exibeFichaTecnica();
 
 
-        var fightClub = new Filme();
+        var fightClub = new Filme("Fight Club", 2000);
 
-        fightClub.setNome("Fight Club");
-        fightClub.setAnoDeLancamento(2000);
         fightClub.setDuracaoEmMinutos(229);
         fightClub.avalieFilme(7);
         fightClub.exibeFichaTecnica();
 
 
-        Filme meuFilme = new Filme();
+        Filme homemAranha = new Filme("Homem Aranha", 2014);
 
-        meuFilme.setNome("Homem Aranha");
-        meuFilme.setAnoDeLancamento(2014);
-        meuFilme.setDuracaoEmMinutos(290);
-        meuFilme.avalieFilme(9);
+        homemAranha.setDuracaoEmMinutos(290);
+        homemAranha.avalieFilme(9);
 
-        meuFilme.exibeFichaTecnica();
+        homemAranha.exibeFichaTecnica();
 
 
-        System.out.println(meuFilme.pegaMedia());
+        System.out.println(homemAranha.pegaMedia());
 
-        System.out.println("O total de avaliações é: " + meuFilme.getTotalDeAvaliacao());
+        System.out.println("O total de avaliações é: " + homemAranha.getTotalDeAvaliacao());
 
-        Serie lost = new Serie();
+        Serie lost = new Serie("lost", 1900);
 
-        lost.setNome("lost");
-        lost.setAnoDeLancamento(1900);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(19);
@@ -63,7 +55,7 @@ public class Main {
         CalculadorDeTempo calculadora = new CalculadorDeTempo();
 
         calculadora.inclui(lost);
-        calculadora.inclui(meuFilme);
+        calculadora.inclui(homemAranha);
         calculadora.inclui(fightClub);
 
         System.out.println(calculadora.getTempoTotal());
@@ -71,13 +63,13 @@ public class Main {
         FiltroDeClassificacao filtro = new FiltroDeClassificacao();
 
 
-         filtro.filtra(meuFilme);
+         filtro.filtra(homemAranha);
          filtro.filtra(lost);
          filtro.filtra(fightClub);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
 
-        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(homemAranha);
         listaDeFilmes.add(tropa);
         listaDeFilmes.add(fightClub);
 

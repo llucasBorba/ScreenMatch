@@ -10,6 +10,10 @@ public class Serie extends Titulo implements Classificavel {
     private int anoDeLancamento;
     private int totalDeVisualizacoes;
 
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public int getTemporadas() {
         return temporadas;
     }
@@ -73,5 +77,10 @@ public class Serie extends Titulo implements Classificavel {
         } else {
             return 2;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Serie: %s (%d)".formatted(getNome(),getAnoDeLancamento());
     }
 }
