@@ -16,6 +16,5 @@ public class SearchMain {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println("\n" + response.body());
-
     }
 }
