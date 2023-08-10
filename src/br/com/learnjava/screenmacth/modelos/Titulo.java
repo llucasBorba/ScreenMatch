@@ -1,9 +1,13 @@
 package br.com.learnjava.screenmacth.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo> {
 
     //Declarar atributos de uma classe
+    @SerializedName("Title")
     String nome;
+    @SerializedName("Year")
     private int anoDeLancamento;
     int duracaoEmMinutos;
     private boolean incluidoNoPLano;
@@ -58,4 +62,5 @@ public class Titulo implements Comparable<Titulo> {
     public int compareTo(Titulo outroTitulo) {
         return this.getNome().compareTo(outroTitulo.getNome());
     }
+
 }
