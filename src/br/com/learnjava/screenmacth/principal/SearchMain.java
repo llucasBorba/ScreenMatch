@@ -1,7 +1,10 @@
 package br.com.learnjava.screenmacth.principal;
 
 import br.com.learnjava.screenmacth.modelos.Titulo;
+import br.com.learnjava.screenmacth.modelos.TituloOMDB;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.net.URI;
@@ -12,10 +15,15 @@ import java.util.Scanner;
 
 public class SearchMain {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Scanner leitura = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o filme para busca: ");
-        var busca = leitura.nextLine();
+       // System.out.println("Digite o filme para busca, quando cansar de buscar o filme digite sair: ");
+       // String exit = scanner.nextLine();
+
+       // while (!exit.equalsIgnoreCase("sair")) {
+        System.out.println("Digite o filme para busca ");
+
+        var busca = scanner.nextLine();
 
         var endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=8796ddcc";
 
@@ -29,8 +37,17 @@ public class SearchMain {
          String json = response.body();
         System.out.println("\n" + json);
 
-        Gson gson = new Gson();
-        Titulo meuTitulo = gson.fromJson(json, Titulo.class);
-        System.out.println("Titulo nome: " + meuTitulo.getNome());
+        Gson gson  = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .create();
+       // Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+        TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
+        System.out.println(meuTituloOmdb);
+           // exit = scanner.nextLine();
+
+        Titulo search = new Titulo(meuTituloOmdb);
+
+        }
+
     }
-}
+
