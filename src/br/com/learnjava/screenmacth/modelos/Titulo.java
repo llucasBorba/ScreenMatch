@@ -1,5 +1,6 @@
 package br.com.learnjava.screenmacth.modelos;
 
+import br.com.learnjava.screenmacth.execptions.ErroNoAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo> {
@@ -23,7 +24,10 @@ public class Titulo implements Comparable<Titulo> {
 
     public Titulo(TituloOMDB meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
-        if (meuTituloOmdb.year().length() > 4){}
+        if (meuTituloOmdb.year().length() > 4){
+            throw new ErroNoAnoException();
+
+        }
 
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));

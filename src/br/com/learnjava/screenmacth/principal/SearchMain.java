@@ -57,9 +57,9 @@ public class SearchMain {
 
         } catch (NumberFormatException e) {
             System.out.println(" \n Aconteceu um erro: " + e.getMessage());
-
             System.out.println("O programa foi executado com erro");
         }
+
 
     }
 

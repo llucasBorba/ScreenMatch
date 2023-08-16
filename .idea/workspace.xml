@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="JSON em classe">
+      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/execptions/ErroNoAnoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
@@ -18,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,6 +73,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.learnjava.screenmacth.execptions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -117,7 +121,7 @@
       <workItem from="1690333447871" duration="2026000" />
       <workItem from="1691163092788" duration="2525000" />
       <workItem from="1691549412395" duration="15420000" />
-      <workItem from="1691963167699" duration="9064000" />
+      <workItem from="1691963167699" duration="10162000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
@@ -183,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692187193126</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="JSON em classe">
+      <option name="closed" value="true" />
+      <created>1692228518914</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692228518914</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
