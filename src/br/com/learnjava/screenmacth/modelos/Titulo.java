@@ -5,9 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class Titulo implements Comparable<Titulo> {
 
     //Declarar atributos de uma classe
-    @SerializedName("Title")
     String nome;
-    @SerializedName("Year")
     private int anoDeLancamento;
     int duracaoEmMinutos;
     private boolean incluidoNoPLano;
@@ -25,6 +23,8 @@ public class Titulo implements Comparable<Titulo> {
 
     public Titulo(TituloOMDB meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
+        if (meuTituloOmdb.year().length() > 4){}
+
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }

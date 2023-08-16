@@ -23,24 +23,26 @@ public class SearchMain {
         // while (!exit.equalsIgnoreCase("sair")) {
         System.out.println("Digite o filme para busca ");
 
-        var busca = scanner.nextLine();
+        String busca = scanner.nextLine();
 
-        var endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=8796ddcc";
+       // String busca;
+//        if (input.contains(String.valueOf(' '))) {
+//            busca = input.replace(' ', '+');
+//        } else {
+//            busca = input;
+//        }
+
+        var endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=8796ddcc";
 
         try {
             HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(endereco))
-                    .build();
-            HttpResponse<String> response = client
-                    .send(request, HttpResponse.BodyHandlers.ofString());
+            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
             String json = response.body();
             System.out.println("\n" + json);
 
-            Gson gson  = new GsonBuilder()
-                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                    .create();
+            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
             // Titulo meuTitulo = gson.fromJson(json, Titulo.class);
             TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
             System.out.println(meuTituloOmdb);
@@ -49,10 +51,15 @@ public class SearchMain {
 //        try {
             Titulo search = new Titulo(meuTituloOmdb);
             System.out.println(search);
-        }catch (NumberFormatException e){
-            System.out.println(" \n Aconteceu um erro: " + e.getMessage());
-        }
+
         System.out.println("O programa foi executado corretamente");
+
+
+        } catch (NumberFormatException e) {
+            System.out.println(" \n Aconteceu um erro: " + e.getMessage());
+
+            System.out.println("O programa foi executado com erro");
+        }
 
     }
 
