@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/TituloOMDB.java" afterDir="false" />
+    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="JSON em classe">
+      <change afterPath="$PROJECT_DIR$/Dependencias/gson-2.10.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
@@ -118,7 +118,7 @@
       <workItem from="1690333447871" duration="2026000" />
       <workItem from="1691163092788" duration="2525000" />
       <workItem from="1691549412395" duration="15420000" />
-      <workItem from="1691963167699" duration="1940000" />
+      <workItem from="1691963167699" duration="6813000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
@@ -168,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691716658666</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JSON em classe">
+      <option name="closed" value="true" />
+      <created>1692102564829</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692102564829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +198,7 @@
     <MESSAGE value="Aprimoramento" />
     <MESSAGE value="API" />
     <MESSAGE value="IMDB API" />
-    <option name="LAST_COMMIT_MESSAGE" value="IMDB API" />
+    <MESSAGE value="JSON em classe" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSON em classe" />
   </component>
 </project>
