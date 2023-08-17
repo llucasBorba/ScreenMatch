@@ -1,5 +1,7 @@
 package br.com.learnjava.screenmacth.principal;
 
+import br.com.learnjava.screenmacth.execptions.ErroNoAnoException;
+import br.com.learnjava.screenmacth.modelos.Pesquisando;
 import br.com.learnjava.screenmacth.modelos.Titulo;
 import br.com.learnjava.screenmacth.modelos.TituloOMDB;
 import com.google.gson.FieldNamingPolicy;
@@ -23,42 +25,32 @@ public class SearchMain {
         // while (!exit.equalsIgnoreCase("sair")) {
         System.out.println("Digite o filme para busca ");
 
+       try {
         String busca = scanner.nextLine();
+        Pesquisando search = new Pesquisando();
+        String json = search.Busca(busca);
+        System.out.println("Json na principal: " + json);
 
-       // String busca;
-//        if (input.contains(String.valueOf(' '))) {
-//            busca = input.replace(' ', '+');
-//        } else {
-//            busca = input;
-//        }
 
-        var endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=8796ddcc";
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+        TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-        try {
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println("\n" + meuTituloOmdb);
 
-            String json = response.body();
-            System.out.println("\n" + json);
+            Titulo vamo = new Titulo(meuTituloOmdb);
+            System.out.println(vamo);
 
-            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-            // Titulo meuTitulo = gson.fromJson(json, Titulo.class);
-            TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
-            System.out.println(meuTituloOmdb);
-            // exit = scanner.nextLine();
-
-//        try {
-            Titulo search = new Titulo(meuTituloOmdb);
-            System.out.println(search);
-
-        System.out.println("O programa foi executado corretamente");
-
+            System.out.println("O programa foi executado corretamente");
 
         } catch (NumberFormatException e) {
             System.out.println(" \n Aconteceu um erro: " + e.getMessage());
             System.out.println("O programa foi executado com erro");
+
+        } catch (ErroNoAnoException e) {
+            System.out.println(e.getMessage());
         }
+
+
 
 
     }
