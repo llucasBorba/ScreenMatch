@@ -8,37 +8,35 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.util.Scanner;
 
 public class SearchMain {
     public static void main(String[] args) throws IOException, InterruptedException {
+
         Scanner scanner = new Scanner(System.in);
+        Pesquisando search = new Pesquisando();
 
-        // System.out.println("Digite o filme para busca, quando cansar de buscar o filme digite sair: ");
-        // String exit = scanner.nextLine();
-
-        // while (!exit.equalsIgnoreCase("sair")) {
         System.out.println("Digite o filme para busca ");
 
-       try {
-        String busca = scanner.nextLine();
-        Pesquisando search = new Pesquisando();
-        String json = search.Busca(busca);
-        System.out.println("Json na principal: " + json);
+        try {
+            String busca = scanner.nextLine();
+            String json = search.Busca(busca);
 
+            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+            TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-        TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
-
-        System.out.println("\n" + meuTituloOmdb);
+            System.out.println("\n" + meuTituloOmdb);
 
             Titulo vamo = new Titulo(meuTituloOmdb);
             System.out.println(vamo);
+
+            FileWriter escrita = new FileWriter("FilmeBucado.txt");
+            escrita.write(vamo.toString());
+            escrita.close();
+
 
             System.out.println("O programa foi executado corretamente");
 
@@ -49,8 +47,6 @@ public class SearchMain {
         } catch (ErroNoAnoException e) {
             System.out.println(e.getMessage());
         }
-
-
 
 
     }

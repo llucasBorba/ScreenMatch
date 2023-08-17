@@ -77,7 +77,7 @@ public class Titulo implements Comparable<Titulo> {
     @Override
     public String toString() {
         return """
-               \n O nome do filme é: %s
+               \nO nome do filme é: %s
               Foi lançado em: %d
               E tem exatamente: %d minutos
                """.formatted(nome, anoDeLancamento, duracaoEmMinutos);

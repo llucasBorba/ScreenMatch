@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="JSON em classe">
-      <change afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" afterDir="false" />
+    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Dividindo em classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +121,7 @@
       <workItem from="1690333447871" duration="2026000" />
       <workItem from="1691163092788" duration="2525000" />
       <workItem from="1691549412395" duration="15420000" />
-      <workItem from="1691963167699" duration="13734000" />
+      <workItem from="1691963167699" duration="15393000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
@@ -210,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692230220259</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Dividindo em classes">
+      <option name="closed" value="true" />
+      <created>1692233668296</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692233668297</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +242,7 @@
     <MESSAGE value="API" />
     <MESSAGE value="IMDB API" />
     <MESSAGE value="JSON em classe" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON em classe" />
+    <MESSAGE value="Dividindo em classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dividindo em classes" />
   </component>
 </project>
