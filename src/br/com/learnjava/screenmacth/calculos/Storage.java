@@ -2,6 +2,7 @@ package br.com.learnjava.screenmacth.calculos;
 
 import br.com.learnjava.screenmacth.modelos.Titulo;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 public class Storage {
@@ -31,8 +32,10 @@ public class Storage {
         Titulo.setDuracaoEmMinutos(duracaoEmMinutos);
 
         Titulo.exibeFichaTecnica();
+
         System.out.println("A duração do filme em minutos é:  "+ Titulo.getDuracaoEmMinutos());
-}
 
 
-}
+
+
+}}
