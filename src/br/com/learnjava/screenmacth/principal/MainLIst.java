@@ -23,9 +23,9 @@ public class MainLIst {
         lista.add(tropa);
         lista.add(fightClub);
         lista.add(lost);
-        System.out.println(lista);
+        System.out.println(" \n" + lista);
 
-        for (Titulo item: lista){
+     /*   for (Titulo item: lista){
             System.out.println(item.getNome());
             if (item instanceof Filme filme)
            System.out.println("A classificação é: " + filme.getClassificacao());
@@ -54,7 +54,7 @@ public class MainLIst {
         System.out.println("Lista em Ordem Alfabetica: \n" + lista);
 
         lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
-        System.out.println("Comparando por ano de lançamento: \n" + lista);
+        System.out.println("Comparando por ano de lançamento: \n" + lista);*/
 
 
     }

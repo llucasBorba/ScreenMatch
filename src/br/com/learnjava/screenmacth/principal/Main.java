@@ -63,9 +63,9 @@ public class Main {
         FiltroDeClassificacao filtro = new FiltroDeClassificacao();
 
 
-         filtro.filtra(homemAranha);
-         filtro.filtra(lost);
-         filtro.filtra(fightClub);
+        filtro.filtra(homemAranha);
+        filtro.filtra(lost);
+        filtro.filtra(fightClub);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
 
@@ -76,9 +76,6 @@ public class Main {
         System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
         System.out.println("Tamanho da lista: " + listaDeFilmes.size());
         System.out.println(listaDeFilmes);
-
-
-
 
 
     }
