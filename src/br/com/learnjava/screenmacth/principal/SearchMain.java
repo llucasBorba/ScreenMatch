@@ -11,42 +11,46 @@ import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class SearchMain {
     public static void main(String[] args) throws IOException, InterruptedException {
-
         Scanner scanner = new Scanner(System.in);
         Pesquisando search = new Pesquisando();
+        String busca = " ";
+        List<Titulo> titulos = new ArrayList<>();
 
         System.out.println("Digite o filme para busca ");
+        busca = scanner.nextLine();
 
-        try {
-            String busca = scanner.nextLine();
-            String json = search.Busca(busca);
+                String json = search.Busca(busca);
+                Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+                TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-            TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
-
-            System.out.println("\n" + meuTituloOmdb);
-
-            Titulo vamo = new Titulo(meuTituloOmdb);
-            System.out.println(vamo);
-
-            FileWriter escrita = new FileWriter("FilmeBucado.txt");
-            escrita.write(vamo.toString());
-            escrita.close();
+        while (!busca.equalsIgnoreCase("sair")) {
+            try {
 
 
-            System.out.println("O programa foi executado corretamente");
+                System.out.println("\n" + meuTituloOmdb);
 
-        } catch (NumberFormatException e) {
-            System.out.println(" \n Aconteceu um erro: " + e.getMessage());
-            System.out.println("O programa foi executado com erro");
+                Titulo vamo = new Titulo(meuTituloOmdb);
+                System.out.println(vamo);
 
-        } catch (ErroNoAnoException e) {
-            System.out.println(e.getMessage());
+                titulos.add(vamo);
+                System.out.println("O programa foi executado corretamente");
+
+            } catch (NumberFormatException e) {
+                System.out.println(" \n Aconteceu um erro: " + e.getMessage());
+                System.out.println("O programa foi executado com erro");
+
+            } catch (ErroNoAnoException e) {
+                System.out.println(e.getMessage());
+            }
+
         }
+                System.out.println(titulos);
 
 
     }
