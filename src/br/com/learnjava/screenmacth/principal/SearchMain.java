@@ -50,7 +50,7 @@ public class SearchMain {
             }
 
         }
-                System.out.println(titulos + "Teste");
+                System.out.println(titulos);
 
 
     }
