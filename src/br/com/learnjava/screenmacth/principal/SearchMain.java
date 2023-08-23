@@ -25,9 +25,9 @@ public class SearchMain {
         System.out.println("Digite o filme para busca ");
         busca = scanner.nextLine();
 
-                String json = search.Busca(busca);
-                Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-                TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
+        String json = search.Busca(busca);
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+        TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
         while (!busca.equalsIgnoreCase("sair")) {
             try {
@@ -50,7 +50,7 @@ public class SearchMain {
             }
 
         }
-                System.out.println(titulos);
+        System.out.println(titulos);
 
 
     }
