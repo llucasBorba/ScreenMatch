@@ -39,17 +39,18 @@ public class SearchMain {
                 System.out.println(vamo);
 
                 titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente");
+                System.out.println("O programa foi executado corretamente git ");
 
             } catch (NumberFormatException e) {
                 System.out.println(" \n Aconteceu um erro: " + e.getMessage());
-                System.out.println("O programa foi executado com erro");
+                System.out.println("O programa foi executado com erro ");
 
             } catch (ErroNoAnoException e) {
                 System.out.println(e.getMessage());
             }
 
         }
+
         System.out.println(titulos);
 
 
