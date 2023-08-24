@@ -39,7 +39,7 @@ public class SearchMain {
                 System.out.println(vamo);
 
                 titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente git ");
+                System.out.println("O programa foi executado corretamentegit statu");
 
             } catch (NumberFormatException e) {
                 System.out.println(" \n Aconteceu um erro: " + e.getMessage());
