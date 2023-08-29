@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Mudança em exeptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/execptions/ErroNoAnoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/execptions/ErroNoAnoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/MainLIst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/MainLIst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,10 +152,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainLIst" />
       </list>
     </recent_temporary>
@@ -179,7 +182,9 @@
       <workItem from="1692278119083" duration="252000" />
       <workItem from="1692278678030" duration="800000" />
       <workItem from="1692363221209" duration="5290000" />
-      <workItem from="1692828829598" duration="418000" />
+      <workItem from="1692828829598" duration="2057000" />
+      <workItem from="1692883518244" duration="3014000" />
+      <workItem from="1692887057265" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
