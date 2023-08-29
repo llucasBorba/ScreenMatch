@@ -19,6 +19,7 @@ public class Pesquisando {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         String json = response.body();
+        System.out.println(json);
 
         return json;
 
