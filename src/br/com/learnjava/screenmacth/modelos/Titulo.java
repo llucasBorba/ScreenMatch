@@ -16,7 +16,7 @@ public class Titulo implements Comparable<Titulo> {
     public Titulo(String nome, int anoDeLancamento) {
         this.nome = nome;
         if ( anoDeLancamento < 1895 ) {
-            System.out.println("Nem existia filme mané");
+            System.out.println("Nem existia filme mané ");
         }else {
             this.anoDeLancamento = anoDeLancamento;
         }
@@ -26,9 +26,7 @@ public class Titulo implements Comparable<Titulo> {
         this.nome = meuTituloOmdb.title();
         if (meuTituloOmdb.year().length() > 4){
             throw new ErroNoAnoException();
-
         }
-
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }
