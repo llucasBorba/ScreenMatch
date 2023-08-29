@@ -2,11 +2,8 @@ package br.com.learnjava.screenmacth.principal;
 
 import br.com.learnjava.screenmacth.modelos.Filme;
 import br.com.learnjava.screenmacth.modelos.Serie;
-import br.com.learnjava.screenmacth.modelos.Titulo;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class MainLIst {
@@ -17,12 +14,14 @@ public class MainLIst {
         var lost = new Serie("lost", 1900);
         lost.avalieFilme(9);
 
-        List<Titulo> lista = new ArrayList<>();
+        List<Object> lista = new ArrayList<>();
+
 
         lista.add(homemAranha);
         lista.add(tropa);
         lista.add(fightClub);
         lista.add(lost);
+        lista.add(4);
         System.out.println(" \n" + lista);
 
      /*   for (Titulo item: lista){
