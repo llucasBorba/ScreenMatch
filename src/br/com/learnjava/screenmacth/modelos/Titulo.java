@@ -28,7 +28,7 @@ public class Titulo implements Comparable<Titulo> {
             throw new ErroNoAnoException();
         }
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,));
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }
 
     public int getTotalDeAvaliacao(){
