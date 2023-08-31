@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Mudança em exeptions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Pesquisando.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/modelos/Titulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/MainLIst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/MainLIst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Debug em Titulo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,6 +179,7 @@
       <workItem from="1692828829598" duration="2057000" />
       <workItem from="1692883518244" duration="3014000" />
       <workItem from="1692887057265" duration="15000" />
+      <workItem from="1693314662184" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
@@ -346,7 +341,63 @@
       <option name="project" value="LOCAL" />
       <updated>1692829232819</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Mudança em exeptions">
+      <option name="closed" value="true" />
+      <created>1693314694723</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1693314694723</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Mudança em exeptions">
+      <option name="closed" value="true" />
+      <created>1693314719507</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1693314719507</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Mudança em exeptions">
+      <option name="closed" value="true" />
+      <created>1693314760601</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1693314760601</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Mudança em exeptions">
+      <option name="closed" value="true" />
+      <created>1693314792117</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693314792118</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Mudança em exeptions">
+      <option name="closed" value="true" />
+      <created>1693315150116</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1693315150116</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Debug em Titulo">
+      <option name="closed" value="true" />
+      <created>1693402530366</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693402530366</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Debug em Titulo">
+      <option name="closed" value="true" />
+      <created>1693402546473</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693402546473</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +422,7 @@
     <MESSAGE value="JSON em classe" />
     <MESSAGE value="Dividindo em classes" />
     <MESSAGE value="Mudança em exeptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudança em exeptions" />
+    <MESSAGE value="Debug em Titulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug em Titulo" />
   </component>
 </project>
