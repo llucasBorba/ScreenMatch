@@ -5,6 +5,6 @@ public class ErroNoAnoException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return "Ouve um erro no tamanho do ano!";
+        return "O tamanho do ano não esta correto!";
     }
 }
