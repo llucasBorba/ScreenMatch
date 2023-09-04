@@ -39,7 +39,7 @@ public class SearchMain {
                 System.out.println(vamo);
 
                 titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente");
+                System.out.println("O programa foi executado corretamente ");
 
             } catch (NumberFormatException e) {
                 System.out.println(" \n Aconteceu um erro: " + e.getMessage());
