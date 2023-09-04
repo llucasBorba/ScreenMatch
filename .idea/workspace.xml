@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Debug em Titulo" />
+    <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Alteração em Titulo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +181,7 @@
       <workItem from="1692887057265" duration="15000" />
       <workItem from="1693314662184" duration="1863000" />
       <workItem from="1693490839741" duration="679000" />
+      <workItem from="1693491982320" duration="772000" />
     </task>
     <task id="LOCAL-00001" summary="new test code">
       <option name="closed" value="true" />
@@ -406,7 +407,47 @@
       <option name="project" value="LOCAL" />
       <updated>1693490951935</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Debug em Titulo">
+      <option name="closed" value="true" />
+      <created>1693573637040</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573637040</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Alteração em Titulo">
+      <option name="closed" value="true" />
+      <created>1693573710744</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573710744</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Alteração em Titulo">
+      <option name="closed" value="true" />
+      <created>1693573733076</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573733076</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Alteração em Titulo">
+      <option name="closed" value="true" />
+      <created>1693573775683</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573775683</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Alteração em Titulo">
+      <option name="closed" value="true" />
+      <created>1693573795039</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1693573795039</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,6 +473,7 @@
     <MESSAGE value="Dividindo em classes" />
     <MESSAGE value="Mudança em exeptions" />
     <MESSAGE value="Debug em Titulo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug em Titulo" />
+    <MESSAGE value="Alteração em Titulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração em Titulo" />
   </component>
 </project>
