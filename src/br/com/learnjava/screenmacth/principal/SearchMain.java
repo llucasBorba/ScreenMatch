@@ -19,7 +19,7 @@ public class SearchMain {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner scanner = new Scanner(System.in);
         Pesquisando search = new Pesquisando();
-        String busca = " ";
+        String busca;
         List<Titulo> titulos = new ArrayList<>();
 
         System.out.println("Digite o filme para busca");
