@@ -22,7 +22,7 @@ public class SearchMain {
         String busca = " ";
         List<Titulo> titulos = new ArrayList<>();
 
-        System.out.println("Digite o filme para busca ");
+        System.out.println("Digite o filme para busca");
         busca = scanner.nextLine();
 
         String json = search.Busca(busca);
