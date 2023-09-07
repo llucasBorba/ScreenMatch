@@ -52,7 +52,7 @@ public class SearchMain {
 
 
         System.out.println(titulos);
-            System.out.println("Digite o filme para busca");
+            System.out.println("Digite o filme para busca ");
             busca = scanner.nextLine();
 
     }
