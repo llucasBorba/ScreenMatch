@@ -29,7 +29,7 @@ public class SearchMain {
         Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-        while (!busca.equalsIgnoreCase("sair")) {
+        while (!busca.equalsIgnoreCase("sair!")) {
             try {
 
 
@@ -39,11 +39,11 @@ public class SearchMain {
                 System.out.println(vamo);
 
                 titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente ");
+                System.out.println("O programa foi executado corretamente");
 
             } catch (NumberFormatException e) {
                 System.out.println(" \n Aconteceu um erro: " + e.getMessage());
-                System.out.println("O programa foi executado com erro ");
+                System.out.println("O programa foi executado com erro");
 
             } catch (ErroNoAnoException e) {
                 System.out.println(e.getMessage());
@@ -52,7 +52,7 @@ public class SearchMain {
 
 
         System.out.println(titulos);
-            System.out.println("Digite o filme para busca ");
+            System.out.println("Digite o filme para busca");
             busca = scanner.nextLine();
 
     }
