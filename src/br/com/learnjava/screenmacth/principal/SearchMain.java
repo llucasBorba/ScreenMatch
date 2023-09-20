@@ -29,7 +29,8 @@ public class SearchMain {
         Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
         TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-        while (!busca.equalsIgnoreCase("sair ")) {
+        while (!busca.equalsIgnoreCase("sair " +
+                "")) {
             try {
 
 
