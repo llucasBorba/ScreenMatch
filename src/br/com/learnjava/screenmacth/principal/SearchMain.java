@@ -34,13 +34,13 @@ public class SearchMain {
                 Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
                 TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
-                System.out.println("\n" + meuTituloOmdb);
+               // System.out.println("\n" + meuTituloOmdb);
 
                 Titulo vamo = new Titulo(meuTituloOmdb);
                 System.out.println(vamo);
 
-                titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente");
+                //titulos.add(vamo);
+                System.out.println("O programa foi executado corretamente\n");
 
             } catch (NumberFormatException e) {
                 System.out.println("\nAconteceu um erro: " + e.getMessage());
@@ -50,7 +50,7 @@ public class SearchMain {
                 System.out.println(e.getMessage());
             }
 
-            System.out.println(titulos);
+           // System.out.println(titulos);
         }
 
 
