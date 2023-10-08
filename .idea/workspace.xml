@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a0a4e5-ed18-4f27-8c3e-2f09aea55482" name="Changes" comment="Alteração em Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/learnjava/screenmacth/principal/SearchMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.learnjava.screenmacth.principal.Main" />
       <module name="screenmacth" />
@@ -190,14 +191,7 @@
       <workItem from="1695855880713" duration="2359000" />
       <workItem from="1696210660365" duration="74000" />
       <workItem from="1696430879535" duration="114000" />
-    </task>
-    <task id="LOCAL-00003" summary="API">
-      <option name="closed" value="true" />
-      <created>1691592438545</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1691592438545</updated>
+      <workItem from="1696698015225" duration="1184000" />
     </task>
     <task id="LOCAL-00004" summary="IMDB API">
       <option name="closed" value="true" />
@@ -583,7 +577,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695856532399</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Alteração em Main">
+      <option name="closed" value="true" />
+      <created>1696698046400</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1696698046401</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

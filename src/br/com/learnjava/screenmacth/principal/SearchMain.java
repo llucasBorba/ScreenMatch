@@ -8,8 +8,6 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,17 +20,19 @@ public class SearchMain {
         String busca;
         List<Titulo> titulos = new ArrayList<>();
 
-        System.out.println("Digite o filme para busca");
-        busca = scanner.nextLine();
+        while (true) {
+            System.out.println("Digite \"sair\" para sair");
+            System.out.println("Digite o filme para busca");
+            busca = scanner.nextLine();
 
-        String json = search.Busca(busca);
-        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-        TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
+            if (busca.equalsIgnoreCase("sair")) {
+                break;
+            }
 
-        while (!busca.equalsIgnoreCase("sair " +
-                "")) {
             try {
-
+                String json = search.Busca(busca);
+                Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+                TituloOMDB meuTituloOmdb = gson.fromJson(json, TituloOMDB.class);
 
                 System.out.println("\n" + meuTituloOmdb);
 
@@ -43,21 +43,19 @@ public class SearchMain {
                 System.out.println("O programa foi executado corretamente");
 
             } catch (NumberFormatException e) {
-                System.out.println(" \n Aconteceu um erro: " + e.getMessage());
+                System.out.println("\nAconteceu um erro: " + e.getMessage());
                 System.out.println("O programa foi executado com erro");
 
             } catch (ErroNoAnoException e) {
                 System.out.println(e.getMessage());
             }
 
+            System.out.println(titulos);
+        }
 
-
-        System.out.println(titulos);
-            System.out.println("Digite o filme para busca");
-            busca = scanner.nextLine();
 
     }
+}
 
-}}
 
 
