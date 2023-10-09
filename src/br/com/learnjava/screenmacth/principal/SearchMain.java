@@ -40,11 +40,11 @@ public class SearchMain {
                 System.out.println(vamo);
 
                 //titulos.add(vamo);
-                System.out.println("O programa foi executado corretamente\n");
+                System.out.println("RODOUUUUU\n");
 
             } catch (NumberFormatException e) {
-                System.out.println("\nAconteceu um erro: " + e.getMessage());
-                System.out.println("O programa foi executado com erro");
+                System.out.println("\nRodou, porem deu merda: " + e.getMessage());
+                System.out.println("]");
 
             } catch (ErroNoAnoException e) {
                 System.out.println(e.getMessage());
