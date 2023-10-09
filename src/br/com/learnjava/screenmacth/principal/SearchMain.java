@@ -43,7 +43,7 @@ public class SearchMain {
                 System.out.println("RODOUUUUU\n");
 
             } catch (NumberFormatException e) {
-                System.out.println("\nRodou, porem deu merda: " + e.getMessage());
+                System.out.println("\nRodou, porém deu merda: " + e.getMessage());
                 System.out.println("]");
 
             } catch (ErroNoAnoException e) {
