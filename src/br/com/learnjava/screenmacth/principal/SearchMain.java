@@ -22,7 +22,7 @@ public class SearchMain {
 
         while (true) {
             System.out.println("Digite \"sair\" para sair");
-            System.out.println("Digite o filme para busca");
+            System.out.println("Qual o filme que ce ta querendo saber?");
             busca = scanner.nextLine();
 
             if (busca.equalsIgnoreCase("sair")) {
